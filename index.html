@@ -40,7 +40,7 @@ body {
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: left;
+    float: right;
     display: block;
   }
 }
@@ -81,6 +81,18 @@ table, th, td {
  background-repeat: no-repeat;
  background-position: center;
  }
+ div.transbox {
+  margin: 0;
+  background-color: #fdfdfd;
+  border: 1px solid black;
+  opacity: .9;
+}
+
+div.transbox {
+  margin: 0;
+  font-weight: bold;
+  color: #e0e0e0;
+}
  
 </style>
 </head>
@@ -95,16 +107,20 @@ table, th, td {
     <i class="fa fa-bars"></i>
   </a>
 </div>
+<center>
 <table class="tablehead">
 <tr>
 <th>
-  <h1><center><font face="Optima" size="5" color="#000080"><img src="tpaez logo.jpg" alt="tpaez logo" width="100" height="100" /><strong> TIMOTEO PAEZ HIGH SCHOOL </strong><img src="division.png" alt="deped logo" width="100" height="100" /></center></h1>
-  <h1><center ><font face="Optima" size="5" color="#000080"><strong> Manila </strong></font></center></h1>
-  <h1><center ><font face="Optima" size="5" color="#000080"><strong>T. Paez Integrated School- High School</strong></font></center></h1>
-  <h1><center ><font face="Optima" size="5" color="#000080"><strong>Younger St., Balut, Tondo, Manila, Philippines</strong></font></center></h1>
+<div class="transbox">
+  <h1 ><center><font face="Optima" size="5" color="#4b5320"><img src="tpaez logo.jpg" alt="tpaez logo" width="100" height="100" /><b> TIMOTEO PAEZ HIGH SCHOOL </b><img src="division.png" alt="deped logo" width="100" height="100" /></center></h1>
+  <h1 ><center ><font face="Optima" size="5" color="#4b5320"><b> Manila </b></font></center></h1>
+  <h1 ><center ><font face="Optima" size="5" color="#4b5320"><b>T. Paez Integrated School- High School</b></font></center></h1>
+  <h1 ><center ><font face="Optima" size="5" color="#4b5320"><b>Younger St., Balut, Tondo, Manila, Philippines</b></font></center></h1>
+</div>
 </th>
 </tr>
 </table>
+</center>
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -144,7 +160,7 @@ function carousel() {
 }
 </script>
 </center>
-<table style="width:100%" "height=100%" >
+<table style="width:100%" "height=600px">
 </th> 
   <tr>
     <td><iframe src="schoolpic.html" width="100%" height="600" style="border:none;">
