@@ -1,0 +1,31 @@
+<html>
+<title>School Picture</title>
+
+<div class="homepic" style="max-width:600px">
+  <img class="mySlides" src="entrancelogo.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="schoolentrance.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="schoolprincipal.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="cssteacher.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="groupconference.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="teacherwassist..jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="teacher4s.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="shsteacher.jpg" style="width:550px" "height:400px" noresize scrolling="no">
+  <img class="mySlides" src="GAS.jpg" style="width:600px" "height:400px" noresize scrolling="no">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000); // Change image every 5 seconds
+}
+</script>

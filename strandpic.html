@@ -1,0 +1,26 @@
+<html>
+<title>School Picture</title>
+
+<div class="homepic" style="max-width:500px">
+  <img class="mySlides" src="ICTlandscape.jpg" style="width:550px" "height:250px" noresize scrolling="no">
+  <img class="mySlides" src="HElandscape.jpg" style="width:550px" "height:250px" noresize scrolling="no">
+  <img class="mySlides" src="ABMlandscape.jpg" style="width:550px" "height:250px" noresize scrolling="no">
+  <img class="mySlides" src="GASlandscape.jpg" style="width:550px" "height:250px" noresize scrolling="no">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 5 seconds
+}
+</script>
